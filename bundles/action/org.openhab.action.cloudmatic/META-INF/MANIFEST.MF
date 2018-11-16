@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Private-Package: org.openhab.action.cloudmatic.internal
+Ignore-Package: org.openhab.action.cloudmatic.internal
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-Name: CloudMatic Actions
+Bundle-SymbolicName: org.openhab.action.cloudmatic
+Bundle-Vendor: cloudmatic.de
+Bundle-Version: 1.0.3.qualifier
+Bundle-Activator: org.openhab.action.cloudmatic.internal.CloudMaticActivator
+Bundle-ManifestVersion: 2
+Bundle-Description: Perform CloudMatic Actions via rules
+Import-Package: org.apache.commons.httpclient;version="3.1.0",
+ org.apache.commons.httpclient.methods;version="3.1.0",
+ org.apache.commons.httpclient.params;version="3.1.0",
+ org.apache.commons.io;version="2.2.0",
+ org.apache.commons.lang,
+ org.openhab.core.scriptengine.action,
+ org.osgi.framework,
+ org.osgi.service.cm,
+ org.osgi.service.component,
+ org.slf4j
+Bundle-DocURL: http://www.openhab.org
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Service-Component: OSGI-INF/action.xml
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: org.openhab.action.cloudmatic
